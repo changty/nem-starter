@@ -26,7 +26,7 @@ echo "===============> Install grunt"
 sudo npm install -g grunt-cli
 
 echo "===============> Install ember"
-sudo npm install -g ember-js
+sudo npm install -g ember-cli
 sudo npm install -g phantomjs
 
 
@@ -81,7 +81,7 @@ Vagrant.configure(2) do |config|
   config.vm.network :forwarded_port, host: 13303, guest: 13303
   config.vm.network :forwarded_port, host: 4567, guest: 4567
   config.vm.network :forwarded_port, host: 3000, guest: 3000
-  config.vm.network :forwarded_port, host: 4444, guest: 4444
+  config.vm.network :forwarded_port, host: 6666, guest: 6666
   config.vm.network :forwarded_port, host: 4200, guest: 4200
 
 
