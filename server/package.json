@@ -1,0 +1,12 @@
+{
+  "name": "nem-starter",
+  "main": "server.js",
+  "version": "1.0.0",
+  "description": "Node, Ember, Mongo boilerplate",
+  "author": "Einari Kurvinen",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.8"
+  }
+}
