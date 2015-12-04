@@ -12,7 +12,7 @@ echo "===============> Install node"
 echo "===============> Install mongodb"
 echo "Install mongodb"
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-echo "deb http://repo.mongodb.org/apt/ubuntu/ "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list 
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
 sudo apt-get update
 sudo apt-get install -y mongodb-org
 
@@ -76,7 +76,7 @@ Vagrant.configure(2) do |config|
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network "private_network", ip: "192.168.33.10"
-  config.vm.network "forwarded_port", guest: 80, host: 8080
+#  config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.network :forwarded_port, host: 8080, guest: 80
   config.vm.network :forwarded_port, host: 13303, guest: 13303
   config.vm.network :forwarded_port, host: 4567, guest: 4567
