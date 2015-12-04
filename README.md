@@ -7,6 +7,10 @@ Prerequisites:
 - Virtualbox
 - SSH-client
 
+On Windows, remeber to run command: 
+vagrant plugin install vagrant-vbguest
+
+
 
 Todo:
 -----
