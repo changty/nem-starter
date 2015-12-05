@@ -83,6 +83,7 @@ Vagrant.configure(2) do |config|
   config.vm.network :forwarded_port, host: 3000, guest: 3000
   config.vm.network :forwarded_port, host: 6666, guest: 6666
   config.vm.network :forwarded_port, host: 4200, guest: 4200
+  config.vm.network :forwarded_port, host: 49152, guest: 49152
 
 
   #nginx
